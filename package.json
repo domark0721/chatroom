@@ -1,0 +1,39 @@
+{
+  "name": "chatroom",
+  "version": "1.0.0",
+  "description": "reactjs + redux + firebase",
+  "main": "index.js",
+  "dependencies": {
+    "next": "^6.1.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/domark0721/chatroom.git"
+  },
+  "keywords": [
+    "reactjs",
+    "redux",
+    "firebase"
+  ],
+  "author": "Mark Tsai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/domark0721/chatroom/issues"
+  },
+  "homepage": "https://github.com/domark0721/chatroom#readme"
+}
