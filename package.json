@@ -4,7 +4,9 @@
   "description": "reactjs + redux + firebase",
   "main": "index.js",
   "dependencies": {
+    "@zeit/next-sass": "^0.2.0",
     "next": "^6.1.1",
+    "node-sass": "^4.9.3",
     "react": "^16.4.2",
     "react-dom": "^16.4.2"
   },

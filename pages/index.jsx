@@ -1,3 +1,8 @@
 
+import App from '../src/components/App/App'
 
-export default () => <div>Welcome to next.js!</div>
+export default () => (
+  <div>
+    <App />
+  </div>
+)
