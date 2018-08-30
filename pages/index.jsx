@@ -1,5 +1,5 @@
 
-import App from '../src/components/App/App'
+import App from '../src/components/App'
 
 export default () => (
   <div>

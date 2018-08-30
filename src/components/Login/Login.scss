@@ -1,0 +1,32 @@
+.loginWrap {
+  border: 1px solid #c0bcbc;
+  padding: 20px 10px;
+  text-align: center;
+  border-radius: 8px;
+  width: 400px;
+  margin: 55px auto 0;
+  background-color: white;
+}
+
+.welcome {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+
+input {
+  padding: 3px 5px;
+  font-size: 15px;
+  display: block;
+  width: 250px;
+  margin: 10px auto 20px;
+  text-align: center;
+}
+
+.submitBtn {
+  font-size: 15px;
+  padding: 6px 20px;
+  border-radius: 6px;
+  background-color: #03A9F4;
+  color: white;
+}
