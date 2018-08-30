@@ -1,0 +1,27 @@
+.messagesBoxWrap {
+  position: relative;
+  border: 1px solid #c0bcbc;
+  padding: 20px 10px;
+  border-radius: 8px;
+  margin: 0 auto;
+  background-color: white;
+  height: calc(100vh - 20px);
+  box-sizing: border-box;
+}
+
+
+.msglist {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+    
+    span {
+      padding: 8px 15px;
+      background-color: aquamarine;
+      margin-bottom: 8px;
+      display: inline-block;
+      border-radius: 10px;
+    }
+  }
+}

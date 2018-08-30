@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import OnlineUsers from './OnlineUsers'
-import MessagesBox from './MessagesBox'
+import MsgsBox from './MsgsBox'
 import styles from './ChatRoom.scss'
 
 
@@ -13,7 +13,7 @@ export default class ChatRoom extends Component {
           <OnlineUsers />
         </div>
         <div className={styles.rightSide}>
-          <MessagesBox />
+          <MsgsBox />
         </div>
       </div>
     )
