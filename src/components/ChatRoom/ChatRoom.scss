@@ -1,0 +1,14 @@
+
+.chatRoomWrap {
+  display: flex;
+  align-items: stretch;
+}
+
+.leftSide {
+  width: 30%;
+}
+
+.rightSide {
+  flex: 1;
+  margin-left: 10px;
+}
