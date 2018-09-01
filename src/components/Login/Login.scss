@@ -29,4 +29,10 @@ input {
   border-radius: 6px;
   background-color: #03A9F4;
   color: white;
+  cursor: pointer;
+}
+
+.submitBtn:disabled {
+  background-color: #AAA;
+  cursor: not-allowed;
 }

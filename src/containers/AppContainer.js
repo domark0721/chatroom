@@ -1,10 +1,10 @@
 import { connect } from 'react-redux'
 
 import App from '../components/App'
-import setUserName from '../actions/users'
+import setUserName from '../actions/user'
 
-const mapStateToProps = ({ users }) => ({
-  users,
+const mapStateToProps = ({ user }) => ({
+  user,
 })
 
 

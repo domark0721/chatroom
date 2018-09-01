@@ -7,11 +7,14 @@ import styles from './App.scss'
 
 export default class App extends Component {
   render() {
-    const { setUserName } = this.props
+    const { setUserName, user } = this.props
     return (
       <div className={styles.appWrap}>
-        <Login setUserName={setUserName} />
-        <ChatRoom />
+        {
+          user.isLogin
+            ? <ChatRoom />
+            : <Login setUserName={setUserName} />
+        }
       </div>
     )
   }
@@ -19,4 +22,5 @@ export default class App extends Component {
 
 App.propTypes = {
   setUserName: PropTypes.func.isRequired,
+  user: PropTypes.object.isRequired,
 }

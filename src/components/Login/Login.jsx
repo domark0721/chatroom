@@ -43,6 +43,7 @@ export default class Login extends Component {
           type="button"
           className={styles.submitBtn}
           onClick={this.submitUserName}
+          disabled={name.length === 0}
         >
           Submit
         </button>
