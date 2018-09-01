@@ -9,7 +9,8 @@
         "react/prefer-stateless-function": "off",
         "no-console": "off",
         "react/no-unused-prop-types": ["warn"],
-        "react/forbid-prop-types": "off"
+        "react/forbid-prop-types": "off",
+        "no-unused-vars": ["warn"]
     },
     "globals": {
         "window": true
