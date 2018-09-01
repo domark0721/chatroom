@@ -1,7 +1,12 @@
-import App from '../src/components/App'
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+import rootReducer from '../src/reducers/index'
+import AppContainer from '../src/containers/AppContainer'
+
+const store = createStore(rootReducer)
 
 export default () => (
-  <div>
-    <App />
-  </div>
+  <Provider store={store}>
+    <AppContainer />
+  </Provider>
 )
