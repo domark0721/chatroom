@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import ChatRoom from '../ChatRoom'
+import ChatRoomContainer from '../../containers/ChatRoomContainer'
 import Login from '../Login'
 import styles from './App.scss'
 
@@ -12,7 +12,7 @@ export default class App extends Component {
       <div className={styles.appWrap}>
         {
           user.isLogin
-            ? <ChatRoom />
+            ? <ChatRoomContainer />
             : <Login setUserName={setUserName} />
         }
       </div>

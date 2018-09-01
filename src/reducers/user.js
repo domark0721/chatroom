@@ -4,8 +4,8 @@ export const Types = {
 }
 
 const initialState = {
-  name: '',
-  isLogin: false,
+  name: 'mark',
+  isLogin: true,
 }
 
 export default (state = initialState, action) => {

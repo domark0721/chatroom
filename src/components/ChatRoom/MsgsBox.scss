@@ -1,7 +1,6 @@
-.messagesBoxWrap {
+.MsgBoxWrap {
   position: relative;
   border: 1px solid #c0bcbc;
-  padding: 20px 10px;
   border-radius: 8px;
   margin: 0 auto;
   background-color: white;
@@ -12,16 +11,29 @@
 
 .msglist {
   margin: 0;
-  padding: 0;
+  padding: 20px 10px 0;
+  height: calc(100vh - 158px);
+  overflow-y: scroll;
   li {
     list-style: none;
-    
-    span {
-      padding: 8px 15px;
-      background-color: aquamarine;
-      margin-bottom: 8px;
-      display: inline-block;
-      border-radius: 10px;
-    }
   }
+}
+
+.sender {
+  display: block;
+  margin: 4px 5px;
+  font-size: 10px;
+  color: #666;
+}
+
+.msgBubble {
+  padding: 8px 15px;
+  background-color: aquamarine;
+  margin-bottom: 8px;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.myself {
+  text-align: right;
 }

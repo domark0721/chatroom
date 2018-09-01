@@ -12,13 +12,20 @@
   padding: 3px 5px;
   font-size: 15px;
   flex: 1;
+  text-align: left;
 }
 
-.enterBtn {
+.sendBtn {
   font-size: 15px;
   padding: 6px 20px;
   border-radius: 6px;
   background-color: #009688;
   color: white;
   margin-left: 10px;
+  cursor: pointer;
+}
+
+.sendBtn:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
 }
