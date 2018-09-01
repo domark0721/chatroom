@@ -1,11 +1,13 @@
 {
     "extends": "airbnb",
-        "rules": {
-            "semi": ["error", "never"],
-            "react/react-in-jsx-scope": "off",
-            "react/jsx-filename-extension": "off",
-            "jsx-a11y/html-has-lang": "off",
-            "react/prefer-stateless-function": "off",
-            "no-console": "off"
-        }
+    "parser": "babel-eslint",
+    "rules": {
+        "semi": ["error", "never"],
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-filename-extension": "off",
+        "jsx-a11y/html-has-lang": "off",
+        "react/prefer-stateless-function": "off",
+        "no-console": "off",
+        "react/no-unused-prop-types": ["warn"]
+    }
 }
