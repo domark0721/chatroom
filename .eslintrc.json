@@ -10,7 +10,8 @@
         "no-console": "off",
         "react/no-unused-prop-types": ["warn"],
         "react/forbid-prop-types": "off",
-        "no-unused-vars": ["warn"]
+        "no-unused-vars": ["warn"],
+        "import/prefer-default-export": "off"
     },
     "globals": {
         "window": true
