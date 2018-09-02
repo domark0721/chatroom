@@ -18,12 +18,12 @@ export default class InputMsgBox extends Component {
     const { sendMsg } = this.props
     const { userMsg } = this.state
     sendMsg(userMsg)
+    this.setState({ userMsg: '' })
   }
 
   keyDownHandler = (e) => {
     if (e.keyCode === 13) {
       this.sendMsgHandler()
-      this.setState({ userMsg: '' })
     }
   }
 
