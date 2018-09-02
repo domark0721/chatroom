@@ -21,12 +21,12 @@ export default class Login extends Component {
     const { setUserName } = this.props
     const { name } = this.state
     setUserName(name)
+    this.setState({ userMsg: '' })
   }
 
   keyDownHandler = (e) => {
     if (e.keyCode === 13) {
       this.submitUserName()
-      this.setState({ userMsg: '' })
     }
   }
 

@@ -43,10 +43,12 @@ const sendMsg = msg => (dispatch, getState) => {
   }
   firebaseSendMsg(data)
     .then((docRef) => {
-      console.log('Document written with ID: ', docRef.id)
+      // fufilled
+      // console.log('Document written with ID: ', docRef.id)
     })
     .catch((error) => {
-      console.log('Error adding document: ', error)
+      // rejected
+      // console.log('Error adding document: ', error)
     })
 }
 

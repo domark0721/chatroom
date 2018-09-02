@@ -10,7 +10,9 @@ import { firebaseRealTimeUpdate } from '../../lib/firebaseAPI'
 export default class ChatRoom extends Component {
   componentDidMount() {
     const { fetchMsgList, receiveRealTimeMsgList } = this.props
+    /* get the msg list first time */
     fetchMsgList()
+    /* listen the msg list changed */
     firebaseRealTimeUpdate(receiveRealTimeMsgList)
   }
 
