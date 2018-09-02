@@ -26,7 +26,7 @@ export default class MsgBox extends Component {
                 }
                 {
                   item.name === userName
-                  && <span className={styles.sender}>{`(${moment(item.timeStamp).format('MM/DD HH:mm')})`}</span>
+                  && <span className={styles.sender}>{item.timeStamp ? `(${moment(item.timeStamp).format('MM/DD HH:mm')})` : ' '}</span>
                 }
                 <span className={classnames([styles.msgBubble], {
                   [styles.myBubble]: item.name === userName,

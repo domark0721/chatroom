@@ -11,7 +11,8 @@
         "react/no-unused-prop-types": ["warn"],
         "react/forbid-prop-types": "off",
         "no-unused-vars": ["warn"],
-        "import/prefer-default-export": "off"
+        "import/prefer-default-export": "off",
+        "react/no-unused-state": "off"
     },
     "globals": {
         "window": true

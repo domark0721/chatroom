@@ -23,6 +23,13 @@ export default class Login extends Component {
     setUserName(name)
   }
 
+  keyDownHandler = (e) => {
+    if (e.keyCode === 13) {
+      this.submitUserName()
+      this.setState({ userMsg: '' })
+    }
+  }
+
   render() {
     const { name } = this.state
     return (
@@ -38,6 +45,7 @@ export default class Login extends Component {
           className={styles.inputName}
           onChange={this.inputNameHandler}
           value={name}
+          onKeyDown={this.keyDownHandler}
         />
         <button
           type="button"

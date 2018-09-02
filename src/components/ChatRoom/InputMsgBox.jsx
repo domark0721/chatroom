@@ -11,15 +11,20 @@ export default class InputMsgBox extends Component {
 
   inputMsgHandler = (e) => {
     const { value } = e.target
-    this.setState({
-      userMsg: value,
-    })
+    this.setState({ userMsg: value })
   }
 
   sendMsgHandler = () => {
     const { sendMsg } = this.props
     const { userMsg } = this.state
     sendMsg(userMsg)
+  }
+
+  keyDownHandler = (e) => {
+    if (e.keyCode === 13) {
+      this.sendMsgHandler()
+      this.setState({ userMsg: '' })
+    }
   }
 
   render() {
@@ -30,6 +35,7 @@ export default class InputMsgBox extends Component {
           className={styles.msgInput}
           onChange={this.inputMsgHandler}
           value={userMsg}
+          onKeyDown={this.keyDownHandler}
         />
         <button
           type="button"
