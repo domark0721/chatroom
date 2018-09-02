@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
+import moment from 'moment'
 
 import InputMsgBox from './InputMsgBox'
 import styles from './MsgsBox.scss'
@@ -12,17 +13,26 @@ export default class MsgBox extends Component {
       <div className={styles.MsgBoxWrap}>
         <ul className={styles.msglist}>
           {
-            msg.data.map(item => (
+            msg.msgList.map(item => (
               <li
+                key={item.id}
                 className={classnames({
                   [styles.myself]: item.name === userName,
                 })}
               >
                 {
                   item.name !== userName
-                  && <span className={styles.sender}>{item.name}</span>
+                  && <span className={styles.sender}>{`${item.name} (${moment(item.timeStamp).format('MM/DD HH:mm')})`}</span>
                 }
-                <span className={styles.msgBubble}>
+                {
+                  item.name === userName
+                  && <span className={styles.sender}>{`(${moment(item.timeStamp).format('MM/DD HH:mm')})`}</span>
+                }
+                <span className={classnames([styles.msgBubble], {
+                  [styles.myBubble]: item.name === userName,
+                  [styles.senderBubble]: item.name !== userName,
+                })}
+                >
                   {item.msg}
                 </span>
               </li>
@@ -31,7 +41,6 @@ export default class MsgBox extends Component {
         </ul>
         <InputMsgBox
           sendMsg={sendMsg}
-          userName={userName}
         />
       </div>
     )

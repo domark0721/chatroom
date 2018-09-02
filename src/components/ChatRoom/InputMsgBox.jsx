@@ -17,9 +17,9 @@ export default class InputMsgBox extends Component {
   }
 
   sendMsgHandler = () => {
-    const { sendMsg, userName } = this.props
+    const { sendMsg } = this.props
     const { userMsg } = this.state
-    sendMsg(userMsg, userName)
+    sendMsg(userMsg)
   }
 
   render() {
@@ -47,5 +47,4 @@ export default class InputMsgBox extends Component {
 
 InputMsgBox.propTypes = {
   sendMsg: PropTypes.func.isRequired,
-  userName: PropTypes.string.isRequired,
 }

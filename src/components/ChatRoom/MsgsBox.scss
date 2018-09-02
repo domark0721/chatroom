@@ -28,10 +28,18 @@
 
 .msgBubble {
   padding: 8px 15px;
-  background-color: aquamarine;
   margin-bottom: 8px;
   display: inline-block;
   border-radius: 10px;
+}
+
+.myBubble {
+  background-color: #67b868;
+  color: #fff;
+}
+
+.senderBubble {
+  background-color: #e3e1e1;
 }
 
 .myself {

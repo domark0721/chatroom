@@ -5,8 +5,15 @@ import OnlineUsers from './OnlineUsers'
 import MsgsBox from './MsgsBox'
 import styles from './ChatRoom.scss'
 
+import { firebaseRealTimeUpdate } from '../../lib/firebaseAPI'
 
 export default class ChatRoom extends Component {
+  componentDidMount() {
+    const { fetchMsgList, receiveRealTimeMsgList } = this.props
+    fetchMsgList()
+    firebaseRealTimeUpdate(receiveRealTimeMsgList)
+  }
+
   render() {
     const { user, sendMsg, msg } = this.props
     return (
@@ -28,6 +35,8 @@ export default class ChatRoom extends Component {
 
 ChatRoom.propTypes = {
   user: PropTypes.object.isRequired,
-  sendMsg: PropTypes.func.isRequired,
   msg: PropTypes.object.isRequired,
+  sendMsg: PropTypes.func.isRequired,
+  fetchMsgList: PropTypes.func.isRequired,
+  receiveRealTimeMsgList: PropTypes.func.isRequired,
 }
